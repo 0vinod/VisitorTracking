@@ -1,44 +1,108 @@
 # Visitor Tracking Package for Laravel
 
-The `Ominnet/visitor-tracking` package provides a simple way to track and analyze visitor data in your Laravel application, including total visitors, unique visitors, top visited pages, countries, operating systems, and devices.
+The `omninet/visitor-tracking` package provides an easy way to track and analyze visitor activity in Laravel applications.
 
-## Installation
+Features include:
 
- 
+* Total visitors
+* Unique visitors
+* Top visited pages
+* Country tracking
+* Operating system detection
+* Device tracking
+* Dashboard analytics widgets
 
-1. **Add This inside Composer.json**
+---
 
-   "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.captcha.com"
-        },
-        {
-            "type": "path",
-            "url": "packages/Omninet/VisitorTracking",
-            "options": {
-                "symlink": true
-            }
+# Installation
+
+## Step 1: Add Repository Paths
+
+Add the following inside your application's `composer.json` file:
+
+```json
+"repositories": [
+    {
+        "type": "composer",
+        "url": "http://packages.captcha.com"
+    },
+    {
+        "type": "path",
+        "url": "packages/Omninet/VisitorTracking",
+        "options": {
+            "symlink": true
         }
-    ]
+    }
+]
+```
 
-2. **make command:**
-## composer require omninet/visitor-tracking
+---
 
+## Step 2: Install Package
 
-**To show count on website use component**
-    <x-visitor::visit-counter startCount="10000" />  
-            or
-    <x-visitor::visit-counter />  
+Run the following command:
 
+```bash
+composer require omninet/visitor-tracking
+```
 
-## For Admin Add these Component
-    
-**For Dashbord Analytics** 
-    <x-visitor::country-widget />
+---
 
+# Usage
 
-**For Dashboard Settingaddd This Component:**
-    <x-visitor::visitorSetting />
+## Visitor Counter Component
 
- 
+Display the visitor counter anywhere on your website:
+
+```blade
+<x-visitor::visit-counter startCount="10000" />
+```
+
+or
+
+```blade
+<x-visitor::visit-counter />
+```
+
+---
+
+# Admin Dashboard Components
+
+## Country Analytics Widget
+
+```blade
+<x-visitor::country-widget />
+```
+
+---
+
+## Visitor Settings Component
+
+```blade
+<x-visitor::visitor-setting />
+```
+
+---
+
+# Features
+
+* Live visitor counting
+* Country analytics
+* Device analytics
+* Browser tracking
+* Admin dashboard widgets
+* Configurable visitor counter
+* Laravel Blade components support
+
+---
+
+# Requirements
+
+* PHP 8+
+* Laravel 9 / 10 / 11
+
+---
+
+# License
+
+MIT License
