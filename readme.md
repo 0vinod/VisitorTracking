@@ -1,6 +1,6 @@
 # Visitor Tracking Package for Laravel
 
-The `omninet/visitor-tracking` package provides an easy way to track and analyze visitor activity in Laravel applications.
+The `vinod/visitor-tracking` package provides an easy way to track and analyze visitor activity in Laravel applications.
 
 Features include:
 
