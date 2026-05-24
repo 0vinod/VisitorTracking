@@ -1,49 +1,26 @@
 # Visitor Tracking Package for Laravel
 
-The `vinod/visitor-tracking` package provides an easy way to track and analyze visitor activity in Laravel applications.
-
-Features include:
-
-* Total visitors
-* Unique visitors
-* Top visited pages
-* Country tracking
-* Operating system detection
-* Device tracking
-* Dashboard analytics widgets
-
----
+The `0vinod/visitor-tracking` package provides an easy way to track and analyze visitor activity in Laravel applications.
 
 <img width="718" height="2560" alt="Screenshot" src="https://github.com/user-attachments/assets/02faecdd-b299-4d48-bd37-24b65afcdcbd" />
 
 
-# Installation
+## Features
 
-## Step 1: Add Repository Paths
-
-Add the following inside your application's `composer.json` file:
-
-```json
-"repositories": [
-    {
-        "type": "composer",
-        "url": "http://packages.captcha.com"
-    },
-    {
-        "type": "path",
-        "url": "packages/0vinod/VisitorTracking",
-        "options": {
-            "symlink": true
-        }
-    }
-]
-```
+- Total visitors
+- Unique visitors
+- Top visited pages
+- Country tracking
+- Operating system detection
+- Device tracking
+- Dashboard analytics widgets
+- Blade components support
 
 ---
 
-## Step 2: Install Package
+## Installation
 
-Run the following command:
+Install the package via Composer:
 
 ```bash
 composer require 0vinod/visitor-tracking
@@ -51,11 +28,27 @@ composer require 0vinod/visitor-tracking
 
 ---
 
-# Usage
+## Publish Assets (Optional)
 
-## Visitor Counter Component
+```bash
+php artisan vendor:publish --provider="Vinod\VisitorTracking\VisitorTrackingServiceProvider"
+```
 
-Display the visitor counter anywhere on your website:
+---
+
+## Run Migrations
+
+```bash
+php artisan migrate
+```
+
+---
+
+## Usage
+
+### Visitor Counter Component
+
+Display visitor counter anywhere on your website:
 
 ```blade
 <x-visitor::visit-counter startCount="10000" />
@@ -69,17 +62,15 @@ or
 
 ---
 
-# Admin Dashboard Components
+## Dashboard Widgets
 
-## Country Analytics Widget
+### Country Analytics Widget
 
 ```blade
 <x-visitor::country-widget />
 ```
 
----
-
-## Visitor Settings Component
+### Visitor Settings Widget
 
 ```blade
 <x-visitor::visitor-setting />
@@ -87,25 +78,25 @@ or
 
 ---
 
-# Features
+## Features Included
 
-* Live visitor counting
-* Country analytics
-* Device analytics
-* Browser tracking
-* Admin dashboard widgets
-* Configurable visitor counter
-* Laravel Blade components support
-
----
-
-# Requirements
-
-* PHP 8+
-* Laravel 9 / 10 / 11
+- Live visitor counting
+- Country analytics
+- Browser tracking
+- Device tracking
+- Dashboard widgets
+- Configurable visitor counter
+- Middleware-based tracking
 
 ---
 
-# License
+## Requirements
+
+- PHP 8+
+- Laravel 9 / 10 / 11
+
+---
+
+## License
 
 MIT License

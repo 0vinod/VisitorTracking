@@ -24,7 +24,8 @@
 
     "autoload": {
         "psr-4": {
-            "Vinod\\VisitorTracking\\": "src/"
+            "Vinod\\VisitorTracking\\": "src/",
+             "Vinod\\VisitorTracking\\Database\\": "database/"
         }
     },
 
