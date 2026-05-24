@@ -28,7 +28,7 @@ Add the following inside your application's `composer.json` file:
     },
     {
         "type": "path",
-        "url": "packages/Omninet/VisitorTracking",
+        "url": "packages/0vinod/VisitorTracking",
         "options": {
             "symlink": true
         }
@@ -43,7 +43,7 @@ Add the following inside your application's `composer.json` file:
 Run the following command:
 
 ```bash
-composer require omninet/visitor-tracking
+composer require 0vinod/visitor-tracking
 ```
 
 ---
