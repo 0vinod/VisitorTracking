@@ -10,7 +10,7 @@ use Vinod\VisitorTracking\Helpers\Visitor;
 use Vinod\VisitorTracking\Models\VisitorSetting;
 use Vinod\VisitorTracking\Models\VisitorTable;
 
-class AnalyticsController extends Controller
+class AnalyticsController extends Controller 
 {
     public function dashboard()
     {

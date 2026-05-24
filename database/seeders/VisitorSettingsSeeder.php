@@ -1,6 +1,6 @@
 <?php
 
-namespace 0vinodVisitorTracking\Database\Seeders;
+namespace Vinod\VisitorTracking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
