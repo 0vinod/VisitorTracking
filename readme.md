@@ -14,6 +14,9 @@ Features include:
 
 ---
 
+<img width="718" height="2560" alt="Screenshot" src="https://github.com/user-attachments/assets/02faecdd-b299-4d48-bd37-24b65afcdcbd" />
+
+
 # Installation
 
 ## Step 1: Add Repository Paths
